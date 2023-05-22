@@ -637,7 +637,46 @@
                                             </button>
                                         </div>
                                         <div class="order-detail__more">
-                                            <span>подробнее</span>
+                                            <div class="spoiler-toggle _show-detail-order">
+                                                <span class="_view1">подробнее</span>
+                                                <span class="_view2">свернуть</span>
+                                                <img src="img/select-arrow.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="text14 medium-text">
+                                            Информация о пользователе
+                                        </div>
+                                        <div class="user-info__groups">
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Логин:</div>
+                                                <div class="text14">ivanov@mail.ru</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">E-mail:</div>
+                                                <div class="text14">ivanov@mail.ru</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Тип плательщика</div>
+                                                <div class="text14">Физическое лицо</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Ф.И.О.:</div>
+                                                <div class="text14">Иван Иванов</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Телефон:</div>
+                                                <div class="text14">+71234567890</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Индекс:</div>
+                                                <div class="text14">660073</div>
+                                            </div>
+                                            <div class="user-info__group">
+                                                <div class="text14 dark-gray-text">Местоположение:</div>
+                                                <div class="text14">г. Красноярск, ул. Тельмана 44</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -674,13 +713,38 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="filter-select">
-                                                    <select>
-                                                        <option selected hidden disabled>сменить способ оплаты</option>
-                                                        <option>оплата картой</option>
-                                                        <option>наличные</option>
-                                                    </select>
+                                                <div class="spoiler-toggle _show-pay-options">
+                                                    <span>сменить способ оплаты</span>
+                                                    <img src="img/select-arrow.svg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="pay-options">
+                                            <div class="pay-ways__grid">
+                                                <div class="pay-way font2">
+                                                    <input type="radio" name="payWay">
+                                                    <label>
+                                                        <span>Наличный расчет</span>
+                                                    </label>
+                                                </div>
+                                                <div class="pay-way font2">
+                                                    <input type="radio" name="payWay">
+                                                    <label>
+                                                        <span>Яндекс.деньги</span>
+                                                    </label>
+                                                </div>
+                                                <div class="pay-way font2">
+                                                    <input type="radio" name="payWay">
+                                                    <label>
+                                                        <span>Банковский перевод</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="pay-options__nav">
+                                                <button class="pay-options__btn m-btn m-btn-blue">
+                                                    <span>Изменить способ оплаты</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -705,13 +769,109 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="filter-select">
-                                                    <select>
-                                                        <option selected hidden disabled>показать все</option>
-                                                        <option>оплата картой</option>
-                                                        <option>наличные</option>
-                                                    </select>
+                                                <div class="spoiler-toggle _show-shipment">
+                                                    <span class="_view1">подробнее</span>
+                                                    <span class="_view2">свернуть</span>
+                                                    <img src="img/select-arrow.svg" alt="">
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="shipment">
+                                            <div class="order-table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th><span>Наименование</span></th>
+                                                            <th><span>Количество</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="order-row">
+                                                            <td>
+                                                                <div class="order-row__info">
+                                                                    <div class="order-row__img">
+                                                                        <img src="img/product2.webp" alt="">
+                                                                    </div>
+                                                                    <div class="order-row__title">
+                                                                        <span class="text16">
+                    Комплект Индивидуальный
+                </span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="order-row__prop _count">
+                                                                    <div class="order-row__prop-title">Количество:</div>
+                                                                    <div class="order-row__prop-desc">10 шт</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="order-row">
+                                                            <td>
+                                                                <div class="order-row__info">
+                                                                    <div class="order-row__img">
+                                                                        <img src="img/product3.webp" alt="">
+                                                                    </div>
+                                                                    <div class="order-row__title">
+                                                                        <span class="text16">
+                    Baofeng BF-H7
+                </span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="order-row__prop _count">
+                                                                    <div class="order-row__prop-title">Количество:</div>
+                                                                    <div class="order-row__prop-desc">1 шт</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="order-row">
+                                                            <td>
+                                                                <div class="order-row__info">
+                                                                    <div class="order-row__img">
+                                                                        <img src="img/product3.webp" alt="">
+                                                                    </div>
+                                                                    <div class="order-row__title">
+                                                                        <span class="text16">
+                    Baofeng BF-H7
+                </span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="order-row__prop _count">
+                                                                    <div class="order-row__prop-title">Количество:</div>
+                                                                    <div class="order-row__prop-desc">1 шт</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="order-row">
+                                                            <td>
+                                                                <div class="order-row__info">
+                                                                    <div class="order-row__img">
+                                                                        <img src="img/product2.webp" alt="">
+                                                                    </div>
+                                                                    <div class="order-row__title">
+                                                                        <span class="text16">
+                    Комплект Индивидуальный
+                </span>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="order-row__prop _count">
+                                                                    <div class="order-row__prop-title">Количество:</div>
+                                                                    <div class="order-row__prop-desc">10 шт</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>
